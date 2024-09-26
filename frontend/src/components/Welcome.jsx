@@ -2,7 +2,7 @@ import { LoaderCircle } from "lucide-react";
 
 const Welcome = ({ user, setDepositOpen }) => {
     return (
-        <div className="rounded-xl border border-gray-200 p-7 shadow-sm col-span-2">
+        <div className="w-full rounded-xl border border-gray-200 p-7 shadow-sm lg:col-span-2">
             <p className="uppercase text-gray-400 font-medium text-sm">
                 { user 
                     ? user.username

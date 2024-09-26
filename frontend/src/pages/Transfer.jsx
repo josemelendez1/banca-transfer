@@ -14,7 +14,9 @@ const Transfer = () => {
         <>
             <HeadProvider title={title} />
             <Layout title={title} user={user} search={search} setSearch={(e) => setSearch(e.target.value)}>
-                <AllTransactions search={search} />
+                <div className="w-full h-auto grid grid-col-1 grid-rows-[auto]">
+                    <AllTransactions search={search} />
+                </div>
             </Layout>
         </>
     );

@@ -177,7 +177,7 @@ const Dashboard = () => {
                 setDepositOpen={(value) => setDepositOpen(value)}
                 setwithDrawOpen={(value) => setwithDrawOpen(value)}
             >
-                <div className="w-full h-auto grid grid-cols-3 grid-rows-[auto_auto] gap-4">
+                <div className="w-full h-auto grid grid-col-1 lg:grid-cols-3 grid-rows-[auto_auto_auto] lg:grid-rows[auto_auto] gap-4">
                     <Welcome user={user} setDepositOpen={(value) => setDepositOpen(value)} />
                     <AccountBalance account={account} setWithDrawOpen={(value) => setwithDrawOpen(value)} />
                     <RecentTransactions accountNumber={account && account.accountNumber}/>

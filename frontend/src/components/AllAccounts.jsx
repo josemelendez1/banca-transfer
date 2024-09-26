@@ -15,7 +15,7 @@ const AllAccounts = ({ search }) => {
     }, []);
     
     return (
-        <div className="w-full h-auto">
+        <div className="w-full h-auto overflow-x-auto">
             <table className="mt-5 w-full text-left rtl:text-right text-gray-500 dark:text-gray-400">
                 <thead className="text-[0.7rem] text-gray-400 uppercase dark:text-gray-400">
                     <tr>

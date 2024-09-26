@@ -13,7 +13,9 @@ const Accounts = () => {
         <>
             <HeadProvider title={title} />
             <Layout title={title} user={user} search={search} setSearch={(e) => setSearch(e.target.value)}>
-                <AllAccounts search={search} />
+                <div className="w-full h-auto grid grid-col-1 grid-rows-[auto]">
+                    <AllAccounts search={search} />
+                </div>
             </Layout>
         </>
     );

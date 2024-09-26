@@ -40,6 +40,7 @@ public class SecurityConfiguration {
             .requestMatchers("/user/register").permitAll()
             .requestMatchers("/user/login").permitAll()
             .requestMatchers("/user/faker").permitAll()
+            .requestMatchers("/account/").hasAuthority("ROLE_ADMIN")
             .anyRequest().authenticated()
         ).formLogin(Customizer.withDefaults());
         return http.build();

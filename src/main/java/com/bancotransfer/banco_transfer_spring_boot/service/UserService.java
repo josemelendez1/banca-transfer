@@ -25,6 +25,7 @@ import lombok.AllArgsConstructor;
 public class UserService {
     
     private static final String AUTHORITY_USER = "ROLE_USER";
+    public static final String AUTHORITY_ADMIN = "ROLE_ADMIN";
     private final UserRepository userRepository;
     private final AuthorityRepository authorityRepository;
     private final PasswordEncoder passwordEncoder;
